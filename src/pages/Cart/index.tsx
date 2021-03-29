@@ -50,13 +50,15 @@ const Cart = (): JSX.Element => {
   function handleProductDecrement(product: Product) {
     // TODO
     const itemUpdate = {...product, amount: product.amount-1}
+    
     updateProductAmount({productId:itemUpdate.id, amount:itemUpdate.amount});
   }
 
   function handleRemoveProduct(productId: number) {
     // TODO
-    removeProduct(productId);
+     removeProduct(productId);
   }
+
 
   return (
     <Container>
@@ -73,7 +75,7 @@ const Cart = (): JSX.Element => {
         <tbody>
           {cart.map((cart)=>{
             return (
-              <tr data-testid={cart.id} key={cart.id}>
+              <tr data-testid="product" key={cart.id}>
               <td>
                 <img src={cart.image} alt={cart.title} />
               </td>
