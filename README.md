@@ -2,7 +2,7 @@
 
 Desafio capítulo II - Rocketseat Ignite
 
-#About
+# About
 
 Desenvolver funções de um carrinho de compras: 
  - Adicionar itens ao carrinho
